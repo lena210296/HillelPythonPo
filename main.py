@@ -9,6 +9,13 @@ def parse(URL: str) -> dict:
     return output
 
 
+
+
+
+
+
+
+
 if __name__ == '__main__':
     assert parse('https://example.com/path/to/page?name=ferret&color=purple') == {'name': 'ferret', 'color': 'purple'}
     assert parse('https://example.com/path/to/page?name=ferret&color=purple&') == {'name': 'ferret', 'color': 'purple'}

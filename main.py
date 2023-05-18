@@ -1,4 +1,11 @@
+
 from http.cookies import SimpleCookie
+
+
+
+
+
+
 
 
 def parse_cookie(query: str) -> dict:
@@ -8,7 +15,28 @@ def parse_cookie(query: str) -> dict:
     return output
 
 
+
 if __name__ == '__main__':
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     assert parse_cookie('name=Dima;') == {'name': 'Dima'}
     assert parse_cookie('') == {}
     assert parse_cookie('any_information') == {}
